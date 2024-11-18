@@ -16,6 +16,8 @@ readdirSync('./routes').forEach((file) =>  { // อ่านไฟล์จา�
     App.use('/api', require(routePath));
 });
 
+// commit
+
 // Start server
 App.listen(Port,() => {
     console.log(`SERVER IS RUNNING ON PORT ${5001}`)

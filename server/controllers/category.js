@@ -28,7 +28,7 @@ class Category {
 
             // Check if category already exists
             const existingCategory = await Prisma.category.findUnique({
-                where: { name: this.name.trim() },
+                where: { name: this.name.trim() }
             });
 
             if (existingCategory) {
